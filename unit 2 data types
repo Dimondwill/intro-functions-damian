@@ -48,13 +48,16 @@ def factors(number):
     return result
 print(factors(num))'''
 #gcf calc (short for calculator) no idea how this one works
-'''print("enter 2 numbers in and i will tell you the greatest common factor")
+print("enter 2 numbers in and i will tell you the greatest common factor")
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 
-def gcd(a, b):
-    while b:
-        a, b = b, a % b
-    return a
-
-print(f"The gcf of {num1} and {num2} is {gcd(num1, num2)}")'''
+factor = 1
+for i in num1 and num2:
+    factor += 1
+    cf1 = num1 % factor
+    cf2 = num2 % factor  
+   
+    if cf1 == cf2:
+    
+print(f"The gcf of {num1} and {num2} is {gcf}")
