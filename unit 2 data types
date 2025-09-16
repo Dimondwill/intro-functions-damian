@@ -1,4 +1,14 @@
+#how many words in a sentance
+'''sentance = input ("Enter a sentance: ")
+
 for word in sentance:
+    n = 1
+    for i in sentance:
+        if i == " ":
+            n += 1
+        else:
+            continue
+print(n)'''
 #odd or even (no calc)
 '''num = input("Enter a number: ")
 num = int(num)
