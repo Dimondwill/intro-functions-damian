@@ -1,3 +1,4 @@
+for word in sentance:
 #odd or even (no calc)
 '''num = input("Enter a number: ")
 num = int(num)
