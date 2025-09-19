@@ -54,18 +54,22 @@ print("enter 2 numbers in and i will tell you the greatest common factor")
 num1 =int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 
-factor = 99999999999999999  
+if num1 > num2:
+    factor = num2
+elif num2 > num1:
+    factor = num1
+elif num1 == num2:
+     factor = num1
+
+comf = 1
 factor = int(factor)
 while factor > 0:
     
- 
-    factor -= 1
-
     f1 = num1 % factor
     f2 = num2 % factor  
    
-    if num1 % factor ==0 and num2 % factor == 0 :
+    if num1 % factor == 0 and num2 % factor == 0 :
         comf = factor
-
+        break
+    factor -= 1
 print(f"The gcf of {num1} and {num2} is {comf}")
-
